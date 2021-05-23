@@ -1,0 +1,28 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpZGlwdEBnbWFpbC5jb20iLCJwYXNzd29yZCI6ImFiY2QiLCJpYXQiOjE2MjE3ODYzODMsImV4cCI6MTYyMTc4NjQxM30.wk6mjoRmwmE5IPrv258GTTNBHChdG1biCUBVdG2Heds
+###
+
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpZGlwdEBnbWFpbC5jb20iLCJwYXNzd29yZCI6ImFiY2RlIiwiaWF0IjoxNjIxNzg1MzQxfQ.rcu_P0gQH_Fr7HkA6jDXe-VhyTvpWBbWLlpfK0xWyaM"
+}
+
+###
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpZGlwdEBnbWFpbC5jb20iLCJwYXNzd29yZCI6ImFiY2RlIiwiaWF0IjoxNjIxNzg1MzQxfQ.rcu_P0gQH_Fr7HkA6jDXe-VhyTvpWBbWLlpfK0xWyaM"
+}
+
+
+###
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "email":"vidipt@gmail.com",
+    "password": "abcd"
+}
